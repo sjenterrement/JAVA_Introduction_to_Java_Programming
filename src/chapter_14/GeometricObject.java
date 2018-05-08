@@ -1,4 +1,4 @@
-package chapter_12;
+package chapter_14;
 
 public abstract class GeometricObject {
 	private String color="white";
