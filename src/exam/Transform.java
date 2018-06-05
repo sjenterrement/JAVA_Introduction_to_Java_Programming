@@ -11,8 +11,8 @@ public class Transform extends JFrame implements ActionListener {
 	JLabel label1=new JLabel("Source");
 	JLabel label2=new JLabel("Trans");
 	
-	JTextField text1=new JTextField();
-	JTextField text2=new JTextField();
+	JTextField text1=new JTextField(8);
+	JTextField text2=new JTextField(8);
 	
 	JButton button1=new JButton("Transform");
 	 static JPanel panel=new JPanel();
@@ -53,7 +53,7 @@ public class Transform extends JFrame implements ActionListener {
 		frame.getContentPane().add(panel);
 		
 		frame.setTitle("Textbox");
-		frame.setSize(200,150);
+		frame.setSize(300,100);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
