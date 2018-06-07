@@ -7,6 +7,7 @@ public class Ytb_2018_5_13_1 {
 		String[] words= {"funk","furry","chunk","banana"};
 		
 		//startWith
+		System.out.print(words.length);
 		for(String w:words) {
 			if(w.startsWith("fu"))
 				System.out.println(w+" start with fu.");
