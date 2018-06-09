@@ -1,6 +1,7 @@
 package exam;
 
 import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -21,6 +22,7 @@ public class Transform extends JFrame implements ActionListener {
 	
 	public Transform() {
 		text2.setEnabled(false);
+		
 		button1.setActionCommand("Transform");
 		button1.addActionListener(this);
 		
@@ -34,6 +36,9 @@ public class Transform extends JFrame implements ActionListener {
 		
 		panel.add(panel1,BorderLayout.CENTER);
 		panel.add(panel2,BorderLayout.SOUTH);
+		
+		panel1.setLayout(new GridLayout(2, 2));
+		panel2.setLayout(new GridLayout(1, 1));
 	}
 	
 	@Override
