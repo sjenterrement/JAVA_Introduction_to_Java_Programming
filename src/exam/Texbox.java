@@ -8,13 +8,16 @@ public class Texbox extends JFrame implements ActionListener{
 	//创建两个固定文本
 	JLabel lebel1=new JLabel("Source");
 	JLabel lebel2=new JLabel("copy");
+	JLabel lebel3=new JLabel("dfghj");
 	
 	//创建两个文本框
 	JTextField text1=new JTextField(8);
 	JTextField text2=new JTextField(8);
+	JTextField text3=new JTextField(8);
 	
 	//创建一个按钮
 	JButton button1=new JButton("copy");
+	JButton button2=new JButton("copy");
 	
 	static //创建三个容器
 	JPanel panel=new JPanel();
@@ -38,12 +41,15 @@ public class Texbox extends JFrame implements ActionListener{
 		panel1.add(text1);
 		panel1.add(lebel2);
 		panel1.add(text2);
+		panel1.add(lebel3);
+		panel1.add(text3);
 		panel2.add(button1);
+		panel2.add(button2);
 		panel.add(panel1,BorderLayout.CENTER);
 		panel.add(panel2,BorderLayout.SOUTH);
 		
-		panel1.setLayout(new GridLayout(2,2));
-		panel2.setLayout(new GridLayout(1,1));
+		panel1.setLayout(new GridLayout(3,2));
+		panel2.setLayout(new GridLayout(1,2));
 		
 	}
 
